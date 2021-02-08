@@ -12,7 +12,7 @@ import com.crm.qa.base.TestBase;
 import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
 import com.crm.qa.pages.SignUpPage;
-
+// adding comments in repository to check git pull functinality
 public class LoginPageTest extends TestBase {
 	LoginPage loginPage;
 	HomePage homePage;
