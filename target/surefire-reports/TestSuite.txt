@@ -1,0 +1,105 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 3, Errors: 0, Skipped: 2, Time elapsed: 234.299 s <<< FAILURE! - in TestSuite
+singleContactsNameTest(com.crm.qa.testcases.ContactsPageTest)  Time elapsed: 21.241 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//td[contains(text(),'a k')]"}
+  (Session info: headless chrome=88.0.4324.146)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELL5250', ip: '192.168.2.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.146, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\neenu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65360}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 60db9bf0daa4b1c7e8ef65b702981a06
+*** Element info: {Using=xpath, value=//td[contains(text(),'a k')]}
+	at com.crm.qa.testcases.ContactsPageTest.singleContactsNameTest(ContactsPageTest.java:42)
+
+multipleContactsNameTest(com.crm.qa.testcases.ContactsPageTest)  Time elapsed: 21.442 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//td[contains(text(),'neenu samuel')]"}
+  (Session info: headless chrome=88.0.4324.146)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELL5250', ip: '192.168.2.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.146, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\neenu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65409}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fdd5f60a0ecb799e5605c7bc648de478
+*** Element info: {Using=xpath, value=//td[contains(text(),'neenu samuel')]}
+	at com.crm.qa.testcases.ContactsPageTest.multipleContactsNameTest(ContactsPageTest.java:49)
+
+setUp(com.crm.qa.testcases.LoginPageTest)  Time elapsed: 4.798 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+session not created
+from tab crashed
+  (Session info: headless chrome=88.0.4324.146)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELL5250', ip: '192.168.2.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0037B963+483]
+	GetHandleVerifier [0x0037B941+449]
+	GetHandleVerifier [0x007231B0+3832368]
+	GetHandleVerifier [0x00718250+3787472]
+	GetHandleVerifier [0x00718028+3786920]
+	GetHandleVerifier [0x007176CD+3784525]
+	GetHandleVerifier [0x00716A47+3781319]
+	GetHandleVerifier [0x00716E36+3782326]
+	GetHandleVerifier [0x00716765+3780581]
+	GetHandleVerifier [0x0071FB21+3818401]
+	GetHandleVerifier [0x00716721+3780513]
+	GetHandleVerifier [0x007174B2+3783986]
+	GetHandleVerifier [0x00716A47+3781319]
+	GetHandleVerifier [0x00716E36+3782326]
+	GetHandleVerifier [0x00716765+3780581]
+	GetHandleVerifier [0x0071BD38+3802552]
+	GetHandleVerifier [0x0071BD87+3802631]
+	GetHandleVerifier [0x00716721+3780513]
+	GetHandleVerifier [0x007174B2+3783986]
+	GetHandleVerifier [0x00716A47+3781319]
+	GetHandleVerifier [0x00716E36+3782326]
+	GetHandleVerifier [0x00716765+3780581]
+	GetHandleVerifier [0x0071DF9C+3811356]
+	GetHandleVerifier [0x00716721+3780513]
+	GetHandleVerifier [0x007174B2+3783986]
+	GetHandleVerifier [0x00716A47+3781319]
+	GetHandleVerifier [0x00716E36+3782326]
+	GetHandleVerifier [0x00716765+3780581]
+	GetHandleVerifier [0x0071C392+3804178]
+	GetHandleVerifier [0x00716721+3780513]
+	GetHandleVerifier [0x007174B2+3783986]
+	GetHandleVerifier [0x00716A47+3781319]
+	GetHandleVerifier [0x00716E36+3782326]
+	GetHandleVerifier [0x00716765+3780581]
+	GetHandleVerifier [0x0071B655+3800789]
+	GetHandleVerifier [0x00716721+3780513]
+	GetHandleVerifier [0x007174B2+3783986]
+	GetHandleVerifier [0x00716A47+3781319]
+	GetHandleVerifier [0x00716E36+3782326]
+	GetHandleVerifier [0x00716765+3780581]
+	GetHandleVerifier [0x00712F46+3766214]
+	GetHandleVerifier [0x00716721+3780513]
+	GetHandleVerifier [0x00716543+3780035]
+	GetHandleVerifier [0x00716337+3779511]
+	GetHandleVerifier [0x00724540+3837376]
+	GetHandleVerifier [0x0075F4BC+4078908]
+	GetHandleVerifier [0x0075E56C+4074988]
+	GetHandleVerifier [0x0075B2EB+4062059]
+	GetHandleVerifier [0x0073ED14+3945876]
+	GetHandleVerifier [0x0073FBCE+3949646]
+	GetHandleVerifier [0x0073FB59+3949529]
+	Ordinal0 [0x0033B5CC+46540]
+	Ordinal0 [0x00339F53+40787]
+	Ordinal0 [0x00339B12+39698]
+	GetHandleVerifier [0x00641468+2907368]
+	GetHandleVerifier [0x004871EE+1096302]
+	GetHandleVerifier [0x00443E8D+821005]
+	GetHandleVerifier [0x0044396B+819691]
+	GetHandleVerifier [0x00443881+819457]
+	GetHandleVerifier [0x0046F463+998627]
+	BaseThreadInitThunk [0x76A7FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77A375F4+228]
+	RtlGetAppContainerNamedObjectPath [0x77A375C4+180]
+
+	at com.crm.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:29)
+

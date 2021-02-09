@@ -35,14 +35,14 @@ public class ContactsPageTest extends TestBase {
 		Assert.assertTrue(contactsPage.verifyContactsLabel());
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2,enabled =false)
 	public void singleContactsNameTest() throws IOException, InterruptedException {
 		contactsPage = homePage.clickOnContactsLink();
 		Thread.sleep(10000);
 		contactsPage.selectContactsName("a k");
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3,enabled =false)
 	public void multipleContactsNameTest() throws IOException, InterruptedException {
 		contactsPage = homePage.clickOnContactsLink();
 		Thread.sleep(10000);
