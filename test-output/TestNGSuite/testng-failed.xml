@@ -8,38 +8,12 @@
     <classes>
       <class name="com.crm.qa.testcases.ContactsPageTest">
         <methods>
-          <include name="contactsLabelTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="singleContactsNameTest"/>
           <include name="multipleContactsNameTest"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.ContactsPageTest -->
-      <class name="com.crm.qa.testcases.HomePageTest">
-        <methods>
-          <include name="displayNameTest"/>
-          <include name="setUp"/>
-          <include name="homePageTitleTest"/>
-          <include name="verifyContactsPageLink"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.HomePageTest -->
-      <class name="com.crm.qa.testcases.LoginPageTest">
-        <methods>
-          <include name="clickOnSignUpPageLinkTest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="loginPageTitleTest"/>
-          <include name="loginTest"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
-      <class name="com.crm.qa.testcases.NewContactsPageTest">
-        <methods>
-          <include name="newContactCreationTest"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.NewContactsPageTest -->
     </classes>
   </test> <!-- Test3(failed) -->
 </suite> <!-- Failed suite [TestNGSuite] -->

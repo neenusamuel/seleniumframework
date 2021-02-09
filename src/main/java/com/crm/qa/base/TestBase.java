@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
@@ -17,8 +18,9 @@ public class TestBase {
 
 	public static WebDriver driver;
 	public static Properties prop;
-	public static EventFiringWebDriver e_driver;
-	public static WebEventListener eventListener;
+//	public static EventFiringWebDriver e_driver;
+//	public static WebEventListener eventListener;
+	
 	public TestBase() throws IOException {
 		prop = new Properties();
 		FileInputStream fis = new FileInputStream("C:\\Users\\neenu\\eclipse-workspace\\freeCRMtest"
@@ -32,16 +34,19 @@ public class TestBase {
 
 		if (browser.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\neenu\\Desktop\\browserdrivers\\chromedriver.exe");
-			driver = new ChromeDriver();
+			ChromeOptions opt = new ChromeOptions();
+			opt.addArguments("headless");
+			
+			driver = new ChromeDriver(opt);
 		} else if (browser.equals("ff")) {
 			System.setProperty("webdriver.gecko.driver", "C:\\Users\\neenu\\Desktop\\browserdrivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
-		e_driver = new EventFiringWebDriver(driver);
-//		Now create object of EventListenerHandler to register it with EventFiringWebDriver
-		eventListener = new WebEventListener();
-		e_driver.register(eventListener);
-		driver = e_driver;
+//		e_driver = new EventFiringWebDriver(driver);
+////		Now create object of EventListenerHandler to register it with EventFiringWebDriver
+//		eventListener = new WebEventListener();
+//		e_driver.register(eventListener);
+//		driver = e_driver;
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
