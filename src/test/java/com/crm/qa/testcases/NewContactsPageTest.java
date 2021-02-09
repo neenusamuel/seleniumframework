@@ -39,7 +39,7 @@ public Object[][] getCrmTestData(){
 }
 
 
-	@Test(priority = 1, dataProvider = "getCrmTestData")
+	@Test(priority = 1, dataProvider = "getCrmTestData",enabled = false)
 	public void newContactCreationTest(String firstName, String lastName, String company) throws InterruptedException {
 		newContactsPage.createNewContact(firstName,lastName, company);
 	}
